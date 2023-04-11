@@ -53,7 +53,7 @@ function btnDesencriptar() {
 }
 
 function encriptar(stringEncriptar) {
-    let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    let matrizCodigo = [["a","o22"],["b","o76"],["c","o99"],["d","o12"],["e","o43"],["f","o98"],["g","o24"],["h","o34"],["i","o66"],["j","o45"],["k","o54"],["l","o84"],["m","o33"],["n","o13"],["p","o29"],["q","o38"],["r","o56"],["s","o23"],["t","o65"],["u","o41"],["v","o74"],["w","o77"],["x","o39"],["y","o26"],["z","o10"]];
     stringEncriptar = stringEncriptar.toLowerCase();
 
     for(let i = 0; i < matrizCodigo.length; i++){
@@ -66,7 +66,7 @@ function encriptar(stringEncriptar) {
 }
 
 function desencriptar(stringDesencriptar) {
-    let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    let matrizCodigo = [["a","o22"],["b","o76"],["c","o99"],["d","o12"],["e","o43"],["f","o98"],["g","o24"],["h","o34"],["i","o66"],["j","o45"],["k","o54"],["l","o84"],["m","o33"],["n","o13"],["p","o29"],["q","o38"],["r","o56"],["s","o23"],["t","o65"],["u","o41"],["v","o74"],["w","o77"],["x","o39"],["y","o26"],["z","o10"]];
     stringDesencriptar = stringDesencriptar.toLowerCase();
 
     for(let i = 0; i < matrizCodigo.length; i++){
@@ -81,7 +81,7 @@ function desencriptar(stringDesencriptar) {
 function validarInput() {
 
     let palabraEscrita = document.querySelector(".text-area").value;
-    let validador = palabraEscrita.match(/^[a-z, ""]*$/);
+    let validador = palabraEscrita.match(/^[a-z," ",0-9]*$/);
 
     if(!validador || validador.lenght === 0) {
         alert("Caracteres no permitidos, por favor intente usar sólo letras en minuscula, sin tildes ni caracteres especiales.");
